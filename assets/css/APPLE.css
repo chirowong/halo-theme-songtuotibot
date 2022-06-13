@@ -75,19 +75,21 @@
 
 .section1 .section1-text h1{
     text-align: right;
-    font-size: 50px;
+	font-size: 48px;
 	font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-weight: 300;
+    font-weight: 600;
     line-height: 70px;
 	width: 600px;
+    line-height: 1.0834933333;
 }
 .section1 .section1-text h3{
-    font-size: 30px;
+	font-size: 21px;
     text-align: right;
 	font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    line-height: 42px;
-    font-weight: 100;
 	width: 600px;
+    line-height: 1.381002381;
+    font-weight: 400;
+    letter-spacing: .011em;
 }
 
 .section2 {
