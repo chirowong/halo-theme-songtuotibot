@@ -1,0 +1,38 @@
+# configurations
+# 详情请参考：https://halo.run/develop/theme.html#settings-yaml
+genernal:
+  label: 通用设置
+  items:
+    company_address:
+      name: company_address
+      label: 公司地址
+      type: text
+      placeholder: "公司地址"
+    company_tel:
+      name: company_tel
+      label: 公司电话
+      type: text
+      placeholder: "公司电话"
+    company_email:
+      name: company_email
+      label: 公司邮箱
+      type: text
+      placeholder: "公司邮箱"
+    company_contact:
+      name: company_contact
+      label: 联系人
+      type: text
+      placeholder: "联系人"
+company:
+  label: 企业产品
+  items:
+    finger_video1:
+      name: finger_video1
+      label: 实时感知物体形状视频
+      type: attachment
+      placeholder: "实时感知物体形状视频"
+    finger_video2:
+      name: finger_video2
+      label: 实时感知受力情况视频
+      type: attachment
+      placeholder: "实时感知受力情况视频"

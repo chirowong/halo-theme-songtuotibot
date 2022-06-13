@@ -1,0 +1,11 @@
+id: miaowu_songguotibot_apple
+name: 松果体机器人官网
+author:
+  name: Miaowu
+  website: https://miaowu.tech
+description: 松果机器人官网
+logo: 
+website: https://miaowu.tech
+repo: 
+version: 1.0.0
+require: 1.5.0
