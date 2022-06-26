@@ -1,70 +1,50 @@
+:root {
+    --min-width: 980px;
+    --header-height: 50px;
+}
+
+/*清除默认样式*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body{
-    /**font-family: PingFangSC-Medium, PingFang SC, 'Microsoft YaiHei', Arial, Helvetica, sans-serif;**/
-    font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
-    overflow-x: hidden;
-}
-.hide{ 
-    display: none;
-}
-.btn{
-    display: flex;
-    align-items: center;
-    height: 48px;
-    background: rgba(255, 255, 255, 0.22);
-    border-radius: 24px;
-    backdrop-filter: blur(2px);
-    line-height: 48px;
-    font-size: 20px;
-    padding:0 60px;
-    color: #fff;
-    cursor: pointer;
-}
-.btn:hover{
-    background: rgba(255, 255, 255, 0.15);
-}
-.btn img{
-    margin-left: 10px;
-    width: 24px;
-    height: 24px;
+    color: #262626;
+	/**font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;*/
+    font-family: PingFangSC-Lignt, PingFangSC;
 }
 
-.btn.btn-fade{
-    background: rgba(0, 0, 0, 0.3);
+/*设置整个页面大小*/
+.main {
+	width: 100%;
 }
 
-header{
-    height: 66px;
+/*设置导航栏*/
+.header {
+	/*将导航栏固定*/
+	height: var(--header-height);
     width: 100vw;
-    /**position: absolute;**/
+    position: fixed;
+	top: 0;
     z-index: 999;
-    background: transparent;
-    background: #fff;
-    color: #000;
+	background-color: rgba(48, 48, 51, 0.9);
 }
-/* 以下未非全局fullpage的样式，需要在header里添加class */
-header .container{
+
+.header .container{
+    max-width: var(--min-width);
     margin: 0 auto;
-    max-width: 980px;
 }
 
 .logo{
-    margin-left: 72px;
-    width: 200px;
-    height: 40px;
-    margin-top: 13px;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
 }
-.index-nav{
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    display: inline-block;
-    border-bottom: 1px solid;
-    border-color: #f2f2f2;
-}
+
 .index-nav-frame{
     margin: 0 auto;
     float: right;
-    margin-right: 60px;
 }
 .index-nav-frame-line{
     float: left;
@@ -73,17 +53,17 @@ header .container{
     outline: none;
     cursor: pointer;
     width: 124px;
-    line-height: 62px;
+    line-height: 46px;
     text-align: center;
 }
 .index-nav-frame-line.active{
     color:#fff;
     border-bottom: 4px solid;
-    border-color: #008cff;
+    border-color: rgba(48, 48, 51, 0.9);
 }
 .index-nav-frame-line:hover{
     color:#fff;
-    background: #008cff;
+    background: rgba(48, 48, 51, 0.9);
     backdrop-filter: blur(2px);
 }
 .index-nav-frame-line a{
@@ -94,11 +74,11 @@ header .container{
     color: #fff;
 }
 
-header .container .index-nav-frame-line a.menu-title{
+.header.context .index-nav-frame-line a.menu-title{
   color: #000;
   border: #000;
 }
-header .container .index-nav-frame-line:hover a.menu-title{
+.header.context .index-nav-frame-line:hover a.menu-title{
   color:#fff;
 }
 
@@ -118,7 +98,7 @@ header .container .index-nav-frame-line:hover a.menu-title{
     -o-transition: all 0.5s; /* Opera */
 }
 .index-nav-frame-line-center .container{
-    background: #008cff;
+    background: rgba(48, 48, 51, 0.9);
     opacity: 1;
     /**margin-top: 8px;**/
     padding-top: 8px;
@@ -153,148 +133,133 @@ header .container .index-nav-frame-line:hover a.menu-title{
 .index-nav-frame-line:hover .index-nav-frame-line-center{height:auto;opacity: 1;}
 
 
-.nav-line{height: 50px;width: 100%;position: relative;display: none;outline: none;}
-.nav-small{width: 30px;height: 30px;position: absolute;right: 10px;top:10px;cursor: pointer;display: none;outline: none;}
-.nav-small img{width: 100%;height: 100%;object-fit: cover;}
-.nav-small-focus{position: absolute;width: 100%;height: 100%;display: none;}
-.nav-small-focus:focus{display: none;}
-
-/* main */
-main{
-    width: 100vw;
-    min-height: calc(100vh - 350px);
-}
-main .container{
-    margin: 0 auto;
-    max-width: 980px;
-}
-
-
-/* 底部 */
-footer{
-    min-height: 100px;
-    width: 100%;
-    background-color: #222222;
-}
-footer .container{
-    margin: 0 auto;
-    max-width: 980px;
-    display: flex;
+/*内容部分*/
+.content {
+	margin-top: var(--header-height);
+	display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #fff;
-}
-footer a{
-    text-decoration: none;
-    color: #9fa3a6;
-}
-footer ul{
-    list-style: none;
-}
-footer ul li{
-    font-size: 14px;
-    line-height: 30px;
-    float: left;
-    width: 80px;
-}
-footer .footernav{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-footer .full-footer-line{
-    text-align: center;
-    font-size: 12px;
-    font-weight: 400;
-    color: #9fa3a6;
-    position: relative;
-    padding: 20px 0;
-    margin-top: 20px;
-    border-top: 1px solid #9fa3a6;
-    font-size: 12px;
-}
-.sub-footer{
-    /**margin-right: 110px;
-    margin-left: 110px;**/
-    width: 50%;
-}
-.sub-footer .sub-footer-part {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-.sub-footer .sub-footer-title{
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 25px;
-    margin-top: 30px;
-    margin-right: 20px;
-    float: left;
 }
 
-.sub-footer .sub-footer-content{
-    width: 80%;
-    margin-top: 30px;
+.section { 
+	width: 100%;
+	height: 100%;
 }
 
-.sub-footer-barcodes{
-    display: flex;
-    margin-top: 30px;
+/*末尾部分*/
+.footer {
+	width: 100%;
+	background-color: #F2F2F2;
 }
-.sub-footer-barcodes .img-container{
-    width: 25px;
+
+.footer .container {
+	margin: 0px auto;
+	width: var(--min-width);
+}
+
+.foot-top {
+	color: #888888;
+	font-size: 12px;
+	font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	padding: 0px 0px 9.6px;
+}
+
+.foot-list {
+	padding: 20px 0px 0px;
+	font-size: 12px;
+	color: #555555;
+	width: 100%;
+	height: 150px;
+	font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.foot-contact {
+	font-size: 12px;
+	color: #555555;
+	width: 100%;
+	height: 30px;
+	font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.foot-contact .img-container{
+	float: right;
+    position:relative;
+    cursor:pointer;
+}
+
+.barcode {
+	width: 25px;
     height: 25px;
-    border-radius: 6px;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
+}
+.foot-contact .img-container .barcode-container{
+  visibility:hidden;
+  position:absolute;
+  left: -30px;
+  bottom: 30px;
+  width:100px;
+  height:100px;
+}
+.foot-contact .img-container .barcode-container img{
+  width: 100%;
+}
+.foot-contact .img-container:hover .barcode-container{
+  visibility:visible;
 }
 
-.sub-footer-barcodes .img-container:hover{
-    /**width: 100px;
-    height: 100px;**/
+.list-first {
+	width: 20%;
+	height: 100%;
+	float: left;
 }
 
-.sub-footer-barcodes .barcode-container{
-    position: absolute;
-    z-index: 99;
-    top:40px;
+.list-first ul li {
+	list-style: none;
+	margin: 0px 0px 9.6px;
+
 }
 
-
-.sub-footer-barcodes li{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+.foot-title {
+	margin: 0px 0px 9.6px;
+	color: #333333;
+	font-weight: bold;
 }
 
-.sub-footer-barcodes li a{
-    font-size: 12px;
-    margin-top: 12px;
-    line-height: 17px;
+.list-first ul li a {
+	/*cursor 移入 手形-*/
+	cursor: pointer;
+	text-decoration: none;
+    color: #333333;
 }
 
+.list-first ul li a:hover {
+	text-decoration: underline;
+}
 
-@media only screen and (max-width:1100px) {
-	.index-nav-frame-line-li a{display: block;color: white;}
-	.nav-line{display: block;}
-	.nav-small{display: block;}
-	.nav-small:focus~.index-nav-frame-line{height: auto;border-bottom: 1px solid #ccc;}
-	.nav-small:focus .nav-small-focus{display: block;}
-	.index-nav-frame{width: 100%;}
-	.index-nav-frame-line{width: 100%;height: 0;overflow: hidden;}
-	.index-nav-frame-line-center{position: relative;background: #444359;}
-	.index-nav-frame-line:hover .index-nav-frame-line-center{height:0;opacity: 0;    color:#fff;
-        background: rgba(0, 0, 0, 0.3);
-        border-radius: 6px;
-        backdrop-filter: blur(2px);}
-	.index-nav-frame-line-li{border-bottom: 1px solid #4b4a5e;color: #d9d9d9;background: #444359;}
-	.index-nav-frame-line-li:hover{background: #b63b4d;}
-	.index-nav-frame-line:focus{height: auto;border-bottom: 1px solid #ccc;}
-	.index-nav-frame-line:focus>.index-nav-frame-line-center{height:auto;opacity: 1;}
-	.index-nav-frame-line:focus .index-nav-frame-line-header{color: #B63B4D;}
-	.index-nav-frame-line-focus{display: none;width: 100%;height: 50px;position: absolute;left: 0;top: 0;}
-	.index-nav-frame-line:focus .index-nav-frame-line-focus{display: block;}
+.foot_top {
+	width: var(--min-width);
+	height: 25px;
+	font-size: 12px;
+	font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	color: #888888;
+	margin: 34px 0px 5px;
+}
 
+.foot_top span {
+	color: #0070C9;
+}
+
+.bottom {
+	width: var(--min-width);
+	height: 40px;
+	font-size: 12px;
+	font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	color: #888888;
+	padding: 5px 0px 5px;
+}
+.bottom a {
+	font-size: 1px;
+	text-decoration: none;
+	margin: 0px 0px 0px 20px;
+	color: rgba(29, 29, 31, 0.5);
 }

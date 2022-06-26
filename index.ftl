@@ -1,6 +1,7 @@
-<#include "module/macro.ftl">
-<@head customcss="home" currentmenu="首页"/>
-    <main>
+<#include "module/macro_apple.ftl">
+<@head customcss="home" currentmenu="个人产品"/>
+    <!-- 主体内容栏-->
+    <div class="content">
         <!--轮播图开始-->
       <div class="main-slider">
         <div class="slider-container">
@@ -40,7 +41,7 @@
                 </div>
             </div>
             <div class="slider-item">
-                <img src="${theme_base!}/assets/images/home-slide4.png" />
+                <img src="${theme_base!}/assets/images/home-slide4.jpg" />
                 <div class="slider-left-text slider4">
                     <div class="rightleft">
                         让机器人末端具备<br>精细的3D触觉感知
@@ -104,7 +105,7 @@
                                     </#if>
                                     <div class="news-container">
                                         <div class="title">${post.title!}</div>
-                                        <div class="content">
+                                        <div class="news-content">
                                         <#if post.summary?length gt 60>
                                             ${post.summary[0..100]}..
                                         <#else>
@@ -122,9 +123,5 @@
             </div>
         </div>
         <!--公司动态结束-->
-        <!--footer开始-->
-        <#include "module/footer.ftl">
-
-
-    </main>
+    </div>
 <@foot customjs="home"/>

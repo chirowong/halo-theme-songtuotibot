@@ -5,7 +5,6 @@
 <![endif]-->
 
 <!--基础引用文件-->
-<link rel="stylesheet" type="text/css" href="${theme_base!}/assets/css/normalize.min.css"  />
-<link rel="stylesheet" type="text/css" href="${theme_base!}/assets/css/minireset.min.css"  />
 <link rel="stylesheet" type="text/css" href="${theme_base!}/assets/css/tiny-slider.min.css"  />
+<link rel="stylesheet" type="text/css" href="${theme_base!}/assets/css/fullpage.min.css"  />
 <link rel="stylesheet" type="text/css" href="${theme_base!}/assets/css/base_apple.css"  />

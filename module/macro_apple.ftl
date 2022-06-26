@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta charset="utf-8" />
+    <title>松果体机器人</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="松果机器人" />
-    <meta name="description" content="松果机器人描述...." />
+    <meta name="description" content="松果机器人" />
     <#include "basestyle_apple.ftl">
     <#if customcss??>
     <link rel="stylesheet" type="text/css" href="${theme_base!}/assets/css/${customcss}.css"  />
@@ -15,28 +15,37 @@
     <#include "basescript_apple.ftl">
 </head>
 <body>
-    <header>
-        <div class="container">
+    <!--整个页面大小-->
+    <div class="main">
+    <!--导航栏框-->
+    <div class="header">
+        <!--ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">MR</a></li>
+            <li><a href="#">MRLite</a></li>
+            <li><a href="#">PALM</a></li>
+            <li><a href="#">Finger</a></li>
+        </ul
+        <div class="container"-->
             <!-- <div><img src="${theme_base!}/assets/images/logo-black.png" /> </div> -->
-            <div class="index-nav">
+        <div class="container">
             <a href="${context!}">
-                <img class="logo" src="${theme_base!}/assets/images/logo-black.png">
+                <img class="logo" src="${theme_base!}/assets/images/logo.png">
             </a>
-                <div class="index-nav-frame clearfix">
-                    <div class="nav-line">
+            <div class="index-nav-frame clearfix">
+                    <!--div class="nav-line">
                         
-                    </div>
-                    <div class="nav-small" tabindex="-1">
+                    </div-->
+                    <!--div class="nav-small" tabindex="-1">
                         <div class="nav-small-focus" tabindex="-1">
                             
                         </div>
                         <img src="img/icon.png">
-                    </div>
+                    </div-->
                     <@menu currentmenu=currentmenu/>
-                </div>
             </div>
         </div>
-    </header>
+    </div>
 </#macro>
 
 <#macro menu currentmenu>

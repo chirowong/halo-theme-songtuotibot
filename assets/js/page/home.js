@@ -1,28 +1,4 @@
 $(function(){
-    let page = $('#fullPage').fullpage({
-        onLeave: function(index, nextIndex, direction){
-            // if(nextIndex == 1){
-            //     $('.footer').removeClass('show').remove('downup').addClass('hide')
-            // }
-            // //使用 index
-            // if(nextIndex == 2){
-            //     $('.footer').removeClass('hide').addClass('show').addClass('downup')
-            // }
-    
-          
-        }
-    });
-    $('.section1').on('click','.next',function(){
-        console.log(page)
-        $.fn.fullpage.moveSectionDown();
-        // $('.footer')
-    })
-    $('.section2').on('click','.prev',function(){
-        console.log(page)
-        $.fn.fullpage.moveSectionUp();
-        // $('.footer')
-    })
-
     var sliderHome = tns({
         container: '.slider-container',
 

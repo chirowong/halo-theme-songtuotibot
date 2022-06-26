@@ -28,8 +28,6 @@ overflow-x:hidden;overflow-y:auto;
 .section2 { background: transparent;}
 .context-show{
     background: #F0F3F8;
-    padding-top: 80px;
-    
 }
   
 .fp-tableCell{
@@ -82,7 +80,7 @@ overflow-x:hidden;overflow-y:auto;
     background-size: cover; */
 }
 .banner{
-    width: 100vw;
+    width: 100%;
     position:relative;
     color: #fff;
 }
@@ -125,16 +123,15 @@ overflow-x:hidden;overflow-y:auto;
     letter-spacing: 4px;
     margin-bottom: 20px;
 }
-.our-culture{
+.our-culture {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top:20px;
     padding-bottom: 20px;
-
 }
 .our-culture h1{
-    font-size: 53px;
+    font-size: 30px;
     padding-top: 256px;
     padding-bottom: 220px;
 }

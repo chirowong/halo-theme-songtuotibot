@@ -28,7 +28,7 @@ overflow-x:hidden;overflow-y:auto;
 .section2 { background: transparent;}
 .context-show{
     background: #F0F3F8;
-    padding-top: 80px;
+    padding-top: 50px;
     
 }
   
@@ -37,7 +37,7 @@ overflow-x:hidden;overflow-y:auto;
 }
 
 .banner{
-    width: 100vw;
+    width: 100%;
     position:relative;
     color: #fff;
 }
