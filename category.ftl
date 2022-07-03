@@ -14,36 +14,31 @@
                 <h1>公司动态</h1>
             </div>
             <div class="pure-u-1-1">
-                <div class="pure-g">
-                    <div class="pure-u-20-24">
-                        <div class="news-container">
-                            <#list posts.content as post>
-                                <a href="${post.fullPath!}">
-                                    <div class="news-item">
-                                            <#if post.thumbnail != ''>
-                                        <img src="${post.thumbnail!}">
-                                        <#else>
-                                            <img src="${theme_base!}/assets/images/placeholder.jpg">   
-                                        </#if>
-                                        <div class="news-title">
-                                            ${post.title!}
-                                        </div>
-                                        <div class="news-date">
-                                            ${post.createTime!}
-                                        </div>
-                                    </div>
-                                </a>
-                            </#list>
-                        </div>
-                        <!--div>
-                            <div class=" btn-more">
-                                <span>查看更多</span>
+                <div class="news-container">
+                    <#list posts.content as post>
+                        <a href="${post.fullPath!}">
+                            <div class="news-item">
+                                    <#if post.thumbnail != ''>
+                                <img src="${post.thumbnail!}">
+                                <#else>
+                                    <img src="${theme_base!}/assets/images/placeholder.jpg">   
+                                </#if>
+                                <div class="news-title">
+                                    ${post.title!}
+                                </div>
+                                <div class="news-date">
+                                    ${post.createTime!}
+                                </div>
                             </div>
-                        </div-->
-                    </div>
-                    <div class="pure-u-4-24">
-                    </div>
+                        </a>
+                    </#list>
                 </div>
+                <!--div>
+                    <div class=" btn-more">
+                        <span>查看更多</span>
+                    </div>
+                </div-->
+                    
         </div>
     </div>
 <@foot customjs="company_news"/>
