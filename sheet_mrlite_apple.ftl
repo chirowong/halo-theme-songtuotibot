@@ -1,7 +1,7 @@
 <#include "module/macro_apple.ftl">
 <@head customcss="MRLite" currentmenu="个人产品"/>
     <!-- 主体内容栏-->
-    <div class="content">
+    <div class="content-wrapper">
         <!--导航图-->
         <div class="section mrlite-nav" >
             <div class="mrlite-nav-text">

@@ -1,7 +1,7 @@
 <#include "module/macro_apple.ftl">
 <@head customcss="palm" currentmenu="企业产品"/>
     <!-- 主体内容栏-->
-    <div class="content">
+    <div class="content-wrapper">
         <!--导航图-->
         <div class="section palm-nav" >
             <div class="palm-nav-text">

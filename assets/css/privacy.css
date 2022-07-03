@@ -1,0 +1,26 @@
+.privacy-wrapper {
+	margin: 0px auto;
+    padding: 0px 20px;
+}
+
+.privacy-content {
+	margin: 0px auto;
+    padding: 20px;
+    line-height: 30px;
+}
+
+.privacy-content h1 {
+    text-align: center;
+}
+
+.privacy-content a {
+    text-decoration: none;
+    color: var(--color);
+}
+
+@media (min-width: 78em) {
+    .privacy-wrapper  {
+        width: var(--min-width);
+    }
+    
+}

@@ -1,7 +1,7 @@
 <#include "module/macro_apple.ftl">
 <@head customcss="mr" currentmenu="个人产品"/>
     <!-- 主体内容栏-->
-    <div class="content">
+    <div class="content-wrapper">
         <div id="dowebok">
             <div class="section section1" style="background-image: url(${theme_base!}/assets/images/mr/1.jpg);">
                 <div class="center-show p1">

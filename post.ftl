@@ -1,6 +1,6 @@
 <#include "module/macro_apple.ftl">
 <@head customcss="company_news_detail" currentmenu="关于我们"/>
-    <div class="content">
+    <div class="content-wrapper">
         <div class="section section1 fp-auto-height">
             <div class="context-show news-show">
                 <div class="main-container">

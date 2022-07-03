@@ -15,8 +15,6 @@
     <#include "basescript_apple.ftl">
 </head>
 <body>
-    <!--整个页面大小-->
-    <div class="main">
     <!--导航栏框-->
     <div class="header">
         <!--ul>
@@ -28,7 +26,7 @@
         </ul
         <div class="container"-->
             <!-- <div><img src="${theme_base!}/assets/images/logo-black.png" /> </div> -->
-        <div class="container">
+        <div class="home-menu pure-menu pure-menu-horizontal">
             <a href="${context!}">
                 <img class="logo" src="${theme_base!}/assets/images/logo.png">
             </a>

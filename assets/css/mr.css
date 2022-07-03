@@ -298,3 +298,7 @@ div .info-container{
     font-size: 54px;
     font-weight: bold;
 }
+
+.bottom {
+    margin-bottom: 40px;
+}

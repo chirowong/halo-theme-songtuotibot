@@ -1,31 +1,18 @@
 <#include "module/macro_apple.ftl">
-<@head customcss="home" currentmenu="个人产品"/>
+<@head customcss="home" currentmenu="首页"/>
     <!-- 主体内容栏-->
-    <div class="content">
+    <div class="content-wrapper">
         <!--轮播图开始-->
       <div class="main-slider">
         <div class="slider-container">
             <div class="slider-item">
-                <img src="${theme_base!}/assets/images/home-slide1.png" />
-                <div class="slider-right-text">
+                <img src="${theme_base!}/assets/images/home-slide4.jpg" />
+                <div class="slider-left-text slider4">
                     <div class="rightleft">
-                        行  随  意  动，感“触”“智”深
+                        让机器人末端具备<br>精细的3D触觉感知
                     </div>
                     <div class="leftright">
-                        全球首款Mini按摩机器人<br/>
-                       MR Mini系列
-                    </div>
-                </div>
-            </div>
-            <div class="slider-item ">
-                <img src="${theme_base!}/assets/images/home-slide2.png" />
-                <div class="slider-left-text">
-                    <div class="rightleft">
-                        奇门“机”甲，触手生春
-                    </div>
-                    <div class="leftright">
-                        全球首款家庭按摩机器人<br/>
-                       MR Pilot
+                        Finger系列
                     </div>
                 </div>
             </div>
@@ -40,14 +27,15 @@
                     </div>
                 </div>
             </div>
-            <div class="slider-item">
-                <img src="${theme_base!}/assets/images/home-slide4.jpg" />
-                <div class="slider-left-text slider4">
+            <div class="slider-item ">
+                <img src="${theme_base!}/assets/images/home-slide2.png" />
+                <div class="slider-left-text">
                     <div class="rightleft">
-                        让机器人末端具备<br>精细的3D触觉感知
+                        奇门“机”甲，触手生春
                     </div>
                     <div class="leftright">
-                        Finger系列
+                        全球首款家庭按摩机器人<br/>
+                       MR Pilot
                     </div>
                 </div>
             </div>
