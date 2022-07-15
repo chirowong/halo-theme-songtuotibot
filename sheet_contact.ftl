@@ -19,30 +19,31 @@
             <div class="pure-u-1-2">
                 <div class="pure-g contact-form">
                     <div class="pure-u-1-1">
-                        <form class="pure-form pure-form-stacked">
+                        <form class="pure-form pure-form-stacked" id="contactForm">
                             <fieldset>
                                 <label for="name">姓名：</label>
-                                <input id="name" type="text" placeholder="姓名">
+                                <input id="name" type="text" placeholder="姓名" required>
+                                <input id="url" type="hidden" value="${blog_url!}">
 
                                 <label for="email">邮箱：</label>
-                                <input id="email" type="email" placeholder="邮箱">
+                                <input id="email" type="email" placeholder="邮箱" class="form-textbox">
 
                                 <label for="tel">联系电话：</label>
-                                <input id="tel" type="text" placeholder="联系电话">
+                                <input id="tel" type="tel" placeholder="联系电话" class="form-textbox">
 
                                 <label for="info">您想了解的信息：</label>
-                                <select id="info">
-                                    <option>产品价格</option>
-                                    <option>技术帮助</option>
-                                    <option>商务合作</option>
-                                    <option>媒体合作</option>
-                                    <option>加入我们</option>
+                                <select id="info" class="form-textbox">
+                                    <option value="1">产品价格</option>
+                                    <option value="2">技术帮助</option>
+                                    <option value="3">商务合作</option>
+                                    <option value="4">媒体合作</option>
+                                    <option value="5">加入我们</option>
                                 </select>
 
                                 <label for="content">内容：</label>
-                                <textarea id="content" placeholder="内容"  ></textarea>
+                                <textarea id="content" placeholder="内容"  class="form-textbox"></textarea>
 
-                                <button type="submit" class="pure-button pure-button-primary">提交</button>
+                                <button type="button" class="pure-button pure-button-primary" id="contactBtn">提交</button>
                             </fieldset>
                         </form>
                     </div>
@@ -50,4 +51,4 @@
             </div>
         </div>
     </div>
-<@foot customjs=""/>
+<@foot customjs="contact"/>

@@ -1,6 +1,28 @@
 .slider-container{
     /**margin-top: 66px;**/
 }
+
+.finger-nav { 
+    background: url(../images/home-slide4.jpg) no-repeat center center;
+    background-size:cover;
+    width: 100%;
+	height: calc(100vh - var(--header-height));
+}
+
+.mr-nav { 
+    background: url(../images/mr.png) no-repeat center center;
+    background-size:cover;
+	width: 100%;
+	height: calc(100vh - var(--header-height));
+}
+
+.palm-nav { 
+    background: url(../images/home-slide3.png) no-repeat center center;
+    background-size:cover;
+	width: 100%;
+	height: calc(100vh - var(--header-height));
+}
+
 .slider-container img{
     width: 100%;
 	height: calc(100vh - var(--header-height));

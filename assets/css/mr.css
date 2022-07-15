@@ -282,6 +282,7 @@ div .info-container{
 .btn-rect{
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 52px;
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 1);
@@ -291,7 +292,7 @@ div .info-container{
     padding:0 27px;
     color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
-    width: 300px;
+    width: 230px;
     margin: auto; 
 }
 .h1{

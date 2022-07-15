@@ -135,6 +135,7 @@ body{
     margin-top: var(--header-height);
     overflow: hidden;
     position: relative;
+    min-height: calc(100vh - 290px);
 }
 
 .section { 

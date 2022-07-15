@@ -4,7 +4,7 @@
         <div class="pure-g">
             <div class="pure-u-1-1">
                 <div class="banner">
-                    <img class="banner-img" src="${theme_base!}/assets/images/joinusBg.png">
+                    <img class="banner-img" src="${theme_base!}/assets/images/joinusBg.jpg">
                 </div>
             </div>
         </div>

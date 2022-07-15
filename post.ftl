@@ -1,19 +1,20 @@
 <#include "module/macro_apple.ftl">
 <@head customcss="company_news_detail" currentmenu="关于我们"/>
-    <div class="content-wrapper">
-        <div class="section section1 fp-auto-height">
-            <div class="context-show news-show">
+    <div class="content-wrapper section1">
+        <div class="pure-g content">
+            <div class="pure-u-3-5">
                 <div class="main-container">
-                        <div class="title">
+                    <div class="title">
                         <h3>${post.title!}</h3>
                         <div class="meta">发布时间：${post.createTime!}</div>
-                        </div>
-                        <div class="content">
+                    </div>
+                    <div class="content">
                         ${post.formatContent!}
-                        </div>
+                    </div>
                 </div>
-                <div class="news-container ">
-                    <div class="list-contaienr">
+            </div>
+            <div class="pure-u-2-5">
+                    <div class="list-container">
                         <@postTag method="latest" top="2">
                         <#list posts as post>
                             <div class="news-item">
@@ -38,9 +39,8 @@
                             <span>下一条</span>
                         </div>
                     </div-->
-
                 </div>
-                </div>
+            </div>
         </div>
     </div>
 <@foot customjs="company_news"/>

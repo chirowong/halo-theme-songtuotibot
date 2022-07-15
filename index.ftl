@@ -5,8 +5,7 @@
         <!--轮播图开始-->
       <div class="main-slider">
         <div class="slider-container">
-            <div class="slider-item">
-                <img src="${theme_base!}/assets/images/home-slide4.jpg" />
+            <div class="slider-item finger-nav">
                 <div class="slider-left-text slider4">
                     <div class="rightleft">
                         让机器人末端具备<br>精细的3D触觉感知
@@ -16,8 +15,7 @@
                     </div>
                 </div>
             </div>
-            <div class="slider-item">
-                <img src="${theme_base!}/assets/images/home-slide3.png" />
+            <div class="slider-item palm-nav">
                 <div class="slider-left-text slider3">
                     <div class="rightleft">
                         高精度表面3D触觉数字化
@@ -27,8 +25,7 @@
                     </div>
                 </div>
             </div>
-            <div class="slider-item ">
-                <img src="${theme_base!}/assets/images/home-slide2.png" />
+            <div class="slider-item mr-nav">
                 <div class="slider-left-text">
                     <div class="rightleft">
                         奇门“机”甲，触手生春
