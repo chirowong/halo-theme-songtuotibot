@@ -14,6 +14,15 @@ body{
     color: #262626;
 	/**font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;*/
     font-family: "PingFangSC-Lignt", "PingFangSC", "Microsoft YaHei", sans-serif;
+    font-size: 14px;
+}
+
+.pure-g {
+    font-family: "PingFangSC-Lignt", "PingFangSC", "Microsoft YaHei", sans-serif;
+}
+
+.pure-g [class*=pure-u] {
+    font-family: "PingFangSC-Lignt", "PingFangSC", "Microsoft YaHei", sans-serif;
 }
 
 /*设置导航栏*/

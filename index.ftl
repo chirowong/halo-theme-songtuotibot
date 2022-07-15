@@ -11,7 +11,7 @@
                         让机器人末端具备<br>精细的3D触觉感知
                     </div>
                     <div class="leftright">
-                        Finger系列
+                        FINGER系列
                     </div>
                 </div>
             </div>

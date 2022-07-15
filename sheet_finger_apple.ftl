@@ -7,7 +7,7 @@
             <div class="finger-nav-text">
                 <h1>让机器人末端具备精细的3D触觉感知</h1>
                 <h3>
-                    Finger系列
+                    FINGER系列
                 </h3>
             </div>
         </div>
@@ -105,7 +105,7 @@
                     <div class="techspecs-content">
                     <div class="techspecs-row">
                         <div class="techspecs-rowheader">型号</div>
-                        <div class="techspecs-column">F-1</div>
+                        <div class="techspecs-column">F-I-15</div>
                     </div>
                 </div>
                 <div class="techspecs-content">
@@ -177,14 +177,6 @@
                         <div role="rowheader" class="techspecs-rowheader">供电电流</div>
                         <div role="cell" class="techspecs-column" aria-colspan="2">
                             &lt;500mA
-                        </div>
-                    </div>
-                </div>
-                <div class="techspecs-content">
-                    <div role="row" class="techspecs-row">
-                        <div role="rowheader" class="techspecs-rowheader">运行环境</div>
-                        <div role="cell" class="techspecs-column" aria-colspan="2">
-                            Windows7以上版本
                         </div>
                     </div>
                 </div>

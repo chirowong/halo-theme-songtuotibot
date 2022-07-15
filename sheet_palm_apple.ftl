@@ -142,7 +142,7 @@
                 <div class="techspecs-content">
                 <div class="techspecs-row">
                     <div class="techspecs-rowheader">型号</div>
-                    <div class="techspecs-column">PALM-1-20</div>
+                    <div class="techspecs-column">F-I-20</div>
                 </div>
             </div>
             <div class="techspecs-content">
