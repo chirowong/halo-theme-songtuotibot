@@ -57,7 +57,7 @@
             <div class="video-container">
                 <!--div class="video-line">
                     <div class="img-desc"> 
-                        <video width="480" height="360" controls>
+                        <    width="480" height="360" controls>
                             <#if settings.finger_video1?? && settings.finger_video1 != ''>
                                 <source src="${blog_url!}/${settings.finger_video1!}" type="video/mp4">
                             <#else>
@@ -84,11 +84,14 @@
                         
                     </div>
                     <div class="img-desc"> 
-                        <video width="480" height="360" controls>
+                        <video width="480" height="360" controls autoplay>
                             <#if settings.finger_video2?? && settings.finger_video2 != ''>
                                 <source src="${blog_url!}/${settings.finger_video2!}" type="video/mp4">
                             <#else>
-                                <source src="${theme_base!}/assets/videos/demo2.mp4" type="video/mp4">
+                                <!-- if Firefox -->
+                                <source src="${theme_base!}/assets/videos/demo2.ogg" type="video/ogg" />
+                                <!-- if Safari/Chrome-->
+                                <source src="${theme_base!}/assets/videos/demo2.mp4" type="video/mp4" />
                             </#if>
                             您的浏览器不支持 video 标签。
                             </video>
