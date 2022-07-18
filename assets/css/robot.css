@@ -5,7 +5,7 @@
 
 @media (min-width: 78em) {
     .about-wrapper  {
-        width: var(--min-width);
+        width: 980px;
     }
 }
 
@@ -74,7 +74,7 @@
 
 .about-content a {
     text-decoration: none;
-    color: var(--color);
+    color: #262626;
 }
 
 .about-content ul, ol, li {

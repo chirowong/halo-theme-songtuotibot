@@ -42,68 +42,72 @@
 
         <!--公司动态开始-->
         <div class="section section2">
-            <div class="center-show news-show">
-            <!--公司动态轮播-->
-            <div class="news-slider-container">
-                <h2>
-                    公司动态
-                </h2>
-                <div class="my-slider">
-                    <@postTag method="latest" top="3">
-                        <#list posts as post>
-                        <!--a href="${post.fullPath!}"-->
-                            <div class="slider—item">
-                                 <#if post.thumbnail != ''>
-                                    <img src="${post.thumbnail!}" width=730 height=476>
-                                <#else>
-                                    <img src="${theme_base!}/assets/images/news-main.png">   
-                                </#if>
-                                <div class="slider-short">
-                                    <div class="title">
-                                        ${post.title!}
-                                        <span>${post.createTime!}</span>
-                                    </div>
-                                    <div class="content">
-                                        ${post.summary!}
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        <!--/a-->
-                        </#list>
-                    </@postTag>
-                </div>
-            </div>
-
-            <!-- 右侧新闻列表 -->
-            <div class="newslist-container rightIn">
-                <div class="news-list">
-                    <@postTag method="latest" top="6">
-                        <#list posts as post>
-                            <#if post_index gt 2>
-                            <!--a href="${post.fullPath!}"-->
-                                <div class="news-item">
-                                    <#if post.thumbnail != ''>
-                                        <img style="width: 200px;height:140px ;" src="${post.thumbnail!}">
-                                    <#else>
-                                        <img style="width: 200px;height:140px ;" src="${theme_base!}/assets/images/news-main.png"> 
-                                    </#if>
-                                    <div class="news-container">
-                                        <div class="title">${post.title!}</div>
-                                        <div class="news-content">
-                                        <#if post.summary?length gt 60>
-                                            ${post.summary[0..100]}..
+            <div class="pure-g news-wrapper">
+                <div class="pure-u-12-24">
+                    <!--公司动态轮播-->
+                    <div class="news-slider-container">
+                        <h2>
+                            公司动态
+                        </h2>
+                        <div class="my-slider">
+                            <@postTag method="latest" top="3">
+                                <#list posts as post>
+                                <!--a href="${post.fullPath!}"-->
+                                    <div class="slider—item">
+                                        <#if post.thumbnail != ''>
+                                            <img src="${post.thumbnail!}" width=730 height=476>
                                         <#else>
-                                             ${post.summary}
+                                            <img src="${theme_base!}/assets/images/news-main.png">   
                                         </#if>
+                                        <div class="slider-short">
+                                            <div class="title">
+                                                ${post.title!}
+                                                <span>${post.createTime!}</span>
+                                            </div>
+                                            <div class="content">
+                                                ${post.summary!}
+                                            </div>
+                                            
                                         </div>
-                                        <div class="date">${post.createTime!}</div>
                                     </div>
-                                </div>
-                            <!--/a-->
-                            </#if>
-                        </#list>
-                    </@postTag>
+                                <!--/a-->
+                                </#list>
+                            </@postTag>
+                        </div>
+                    </div>
+                </div>
+                <div class="pure-u-12-24">
+                    <!-- 右侧新闻列表 -->
+                    <div class="newslist-container">
+                        <div class="news-list">
+                            <@postTag method="latest" top="6">
+                                <#list posts as post>
+                                    <#if post_index gt 2>
+                                    <!--a href="${post.fullPath!}"-->
+                                        <div class="news-item">
+                                            <#if post.thumbnail != ''>
+                                                <img style="width: 200px;height:140px ;" src="${post.thumbnail!}">
+                                            <#else>
+                                                <img style="width: 200px;height:140px ;" src="${theme_base!}/assets/images/news-main.png"> 
+                                            </#if>
+                                            <div class="news-container">
+                                                <div class="title">${post.title!}</div>
+                                                <div class="news-content">
+                                                <#if post.summary?length gt 40>
+                                                    ${post.summary[0..40]}..
+                                                <#else>
+                                                    ${post.summary}
+                                                </#if>
+                                                </div>
+                                                <div class="date">${post.createTime!}</div>
+                                            </div>
+                                        </div>
+                                    <!--/a-->
+                                    </#if>
+                                </#list>
+                            </@postTag>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

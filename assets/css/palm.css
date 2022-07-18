@@ -2,7 +2,7 @@
     background: url(../images/home-slide3.png) no-repeat center center;
     background-size:cover;
 	width: 100%;
-	height: calc(100vh - var(--header-height));
+	height: calc(100vh - 50px);
 }
 
 .palm-nav .palm-nav-text{
@@ -78,7 +78,7 @@
     background-color: #fafafa;
     text-align: center;
 	margin: 20px auto;
-    width: var(--min-width);
+    width: 980px;
 }
 
 .palm-feature .palm-feature-row {
@@ -116,12 +116,12 @@
 
 .palm-industry {
 	margin: 20px auto;
-    width: var(--min-width);
+    width: 980px;
 }
 
 .palm-industry .industry-title {
 	margin: 20px auto;
-    width: var(--min-width);
+    width: 980px;
 	font-size: 24px;
 	font-weight: 600;
 	display: flex;
@@ -188,12 +188,12 @@
 
 .palm-materials {
 	margin: 20px auto;
-    width: var(--min-width);
+    width: 980px;
 }
 
 .palm-materials .materials-title {
 	margin: 20px auto;
-    width: var(--min-width);
+    width: 980px;
 	font-size: 24px;
 	font-weight: 600;
 	display: flex;
@@ -210,12 +210,12 @@
 
 .palm-techspecs {
 	margin: 20px auto;
-    width: var(--min-width);
+    width: 980px;
 }
 
 .palm-techspecs .techspecs-title {
 	margin: 20px auto;
-    width: var(--min-width);
+    width: 980px;
 	font-size: 24px;
 	font-weight: 600;
 	text-align: center;

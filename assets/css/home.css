@@ -1,32 +1,33 @@
-.slider-container{
-    /**margin-top: 66px;**/
-}
-
 .finger-nav { 
     background: url(../images/home-slide4.jpg) no-repeat center center;
     background-size:cover;
     width: 100%;
-	height: calc(100vh - var(--header-height));
+	height: calc(100vh - 50px);
 }
 
 .mr-nav { 
     background: url(../images/mr.jpg) no-repeat center center;
     background-size:cover;
 	width: 100%;
-	height: calc(100vh - var(--header-height));
+	height: calc(100vh - 50px);
 }
 
 .palm-nav { 
     background: url(../images/home-slide3.png) no-repeat center center;
     background-size:cover;
 	width: 100%;
-	height: calc(100vh - var(--header-height));
+	height: calc(100vh - 50px);
+}
+
+.slider-container{
+    /**margin-top: 66px;**/
 }
 
 .slider-container img{
     width: 100%;
-	height: calc(100vh - var(--header-height));
+	height: calc(100vh - 50px);
 }
+
 .slider-container .slider-item{
     position: relative;
 }
@@ -52,16 +53,16 @@
     left: 10%;
     color: #000;
 }
+
 .rightleft{
     font-size: 50px;
-    font-family: PingFangSC-Lignt, PingFangSC;
     font-weight: 300;
     line-height: 70px;
 }
+
 .leftright{
     font-size: 30px;
     text-align: right;
-    font-family: PingFangSC-Lignt, PingFangSC;
     line-height: 42px;
     font-weight: 100;
 }
@@ -89,49 +90,18 @@
     background: #FFFFFF;
 }
 
-.section2 { background: transparent;}
 
-.left-show{
-
-    width: 640px;
-    color: #fff;
-    margin-left:  150px;
-    margin-top: 80px;
-    height: calc(100vh - 350px);
-    display: block;
-}
-.action{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    bottom: 40px;
-}
-.action.top{
-    top: 40px;
-    bottom: auto;
-}
-.action .act{
-    margin-top: 50px;
-    cursor: pointer;
+.news-wrapper {
+	margin: 0px auto;
+    padding: 0px 20px;
 }
 
- h1{
-    font-size: 56px;
-    line-height: 78px;
-    text-align: center;
-    margin-top: calc(80px + 40%);
+@media (min-width: 78em) {
+    .news-wrapper  {
+        width: 980px;
+    }
+}
 
-}
- h3{
-    font-size: 40px;
-    line-height: 56px;
-    margin-top: 20px;
-    width: 640px;
-    text-align: center;
-}
 .newslist-container{
     
      padding-left: 28px;
@@ -143,56 +113,15 @@
     justify-content: center;
     flex-direction: row;
 }
-.desc{
-    padding-top: 180px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-.desc .desc-line{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 60px;
-
-}
-.img-desc img{
-    height: 20%;
-}
-.text-desc{
-    padding-right: 80px;
-}
-.text-desc.right{
-    padding-right: 0;
-    padding-left: 80px;
-}
-
-.text-desc .text-title{
-    font-size: 2.8rem;
-    font-weight: 600;
-    color: #677897;
-    line-height: 65px;
-    background: linear-gradient(90deg, #3F8BD3 0%, #A234D5 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.text-desc .text-content{
-    margin-top: 20px;
-    font-size: 30px;
-    font-weight: 300;
-    color: #677897;
-    line-height: 42px;
-    max-width: 516px;
-}
 
 h2{
     font-size: 30px;
     font-weight: 400;
     line-height: 42px;
 }
+
 .news-slider-container{
-    width: 730px;
+    width: 100%;
     position: relative;
 }
 .news-slider-container h2{
@@ -200,7 +129,6 @@ h2{
     width: 100%;
     margin-bottom: 20px;
 }
-
 
 .news-slider-container .tns-nav{
     position: absolute;
@@ -231,7 +159,6 @@ h2{
     overflow: hidden;
 }
 .slider-short{
-  
     width: 100%;
     background: #000000;
     border-radius: 0px 0px 6px 6px;
@@ -261,13 +188,14 @@ h2{
     display: flex;
     background-color: #edf1f4;
     border-radius: 6px;
-    width: 730px;
-    color: #000000;
+    width: 100%;
     margin-bottom: 28px;
     
 }
 .news-container{
     padding: 20px 20px 12px 14px;
+    overflow: hidden;
+    height: 100px;
 }
 .news-item .title{
     font-size: 18px;
@@ -285,25 +213,12 @@ h2{
     line-height: 20px;
 }
 
-@media only screen and (max-width:960px) {
-
-    .left-show{
-        margin-left: 0;
-    }
+body::-webkit-scrollbar{
+    display:none;/* Chrome Safari */
 }
 
-    body::-webkit-scrollbar{
-
-    display:none;/* Chrome Safari */
-    
-    }
-    
-    body{
-    
+body{
     scrollbar-width:none;/* firefox */
-    
     -ms-overflow-style:none;/* IE 10+ */
-    
     overflow-x:hidden;overflow-y:auto;
-    
-    }
+}

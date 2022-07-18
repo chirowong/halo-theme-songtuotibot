@@ -2,7 +2,7 @@
     background: url(../images/home-slide4.jpg) no-repeat center center;
     background-size:cover;
     width: 100%;
-	height: calc(100vh - var(--header-height));
+	height: calc(100vh - 50px);
 }
 
 .finger-nav .finger-nav-text{
@@ -33,12 +33,12 @@
 
 .finger-techspecs .techspecs-container {
 	margin: 20px auto;
-    width: var(--min-width);
+    width: 980px;
 }
 
 .finger-techspecs .techspecs-title {
 	margin: 20px auto;
-    width: var(--min-width);
+    width: 980px;
 	font-size: 24px;
 	font-weight: 600;
 	text-align: center;
@@ -72,7 +72,7 @@
 
 .finger-video {
     margin: 20px auto;
-    width: var(--min-width);
+    width: 980px;
 }
 
 .finger-video .video-container{
@@ -131,7 +131,7 @@
 
 .finger-materials .materials-title {
 	margin: 20px auto;
-    width: var(--min-width);
+    width: 980px;
 	font-size: 24px;
 	font-weight: 600;
 	display: flex;
@@ -141,7 +141,7 @@
 
 .finger-materials .materials-content {
 	margin: 20px auto;
-    width: var(--min-width);
+    width: 980px;
 	font-size: 15px;
 	display: flex;
 	justify-content: center;

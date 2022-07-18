@@ -81,7 +81,7 @@
 
 @media (min-width: 78em) {
     .contact-wrapper  {
-        width: var(--min-width);
+        width: 980px;
     }
     
 }

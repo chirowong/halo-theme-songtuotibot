@@ -28,7 +28,7 @@ body{
 /*设置导航栏*/
 .header {
 	/*将导航栏固定*/
-	height: var(--header-height);
+	height: 50px;
     width: 100%;
     position: fixed;
 	top: 0;
@@ -141,7 +141,7 @@ body{
 
 /*内容部分*/
 .content-wrapper {
-    margin-top: var(--header-height);
+    margin-top: 50px;
     overflow: hidden;
     position: relative;
     min-height: calc(100vh - 290px);
@@ -255,12 +255,12 @@ body{
 
 @media (min-width: 78em) {
     .home-menu {
-        width: var(--min-width);
+        width: 980px;
         margin: 0 auto;
     }
 
     .footer .container {
-        width: var(--min-width);
+        width: 980px;
     }
     
 }

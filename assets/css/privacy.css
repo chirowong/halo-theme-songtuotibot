@@ -20,7 +20,7 @@
 
 @media (min-width: 78em) {
     .privacy-wrapper  {
-        width: var(--min-width);
+        width: 980px;
     }
     
 }

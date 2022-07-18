@@ -10,7 +10,7 @@
 
 @media (min-width: 78em) {
     .content  {
-        width: var(--min-width);
+        width: 980px;
     }
 }
 
