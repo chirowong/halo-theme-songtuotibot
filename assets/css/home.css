@@ -6,7 +6,7 @@
 }
 
 .mr-nav { 
-    background: url(../images/mr.jpg) no-repeat center center;
+    background: url(../images/mr.png) no-repeat center center;
     background-size:cover;
 	width: 100%;
 	height: calc(100vh - 50px);
